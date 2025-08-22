@@ -1,0 +1,18 @@
+# This is a convenience file that points to the main docker-compose file in the infra directory
+version: '3.8'
+
+services:
+  # This file exists to provide a convenient way to run docker-compose commands
+  # from the project root. The actual docker-compose configuration is in the
+  # infra directory.
+
+  # To start all services, run:
+  #   docker-compose -f infra/docker-compose.yml up -d
+  #
+  # Or use the provided scripts in the scripts/ directory.
+  #
+  # For convenience, you can create an alias:
+  #   alias dcp='docker-compose -f infra/docker-compose.yml'
+  # Then use it like: dcp up -d
+
+  # All services are defined in infra/docker-compose.yml
