@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
@@ -38,7 +37,6 @@ func main() {
 	router := gin.Default()
 
 	// We may remove this one after we implement nginx or a proxy server.
-	router.Use(cors.Default())
 	router.Use(gin.Logger())
 
 	router.GET("/", func(c *gin.Context) {

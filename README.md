@@ -6,6 +6,8 @@
 A docker compose that get docker go backend and react frontend and setup a proxy server (nginx) to have backend and front on the same domain.
 
 
+Maybe an script that run the backend with the front.
+
 # GOLANG BACK
 ---
 [] Code quality tools?
@@ -22,3 +24,10 @@ Axios
 Shadcn as library with Tailwind css
 
 Setup (Linter and code quality)
+
+
+
+
+Running the docker entire
+---
+docker compose -f infra/docker-compose.yml up --build -d

@@ -8,7 +8,7 @@ interface Event{
 }
 
 const getEvents = () => {
-  return axios.get<Event[]>("http://localhost:8080/events").then(res => res.data)
+  return axios.get<Event[]>("/api/events").then(res => res.data)
 }
 
 function App() {
