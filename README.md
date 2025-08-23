@@ -31,3 +31,5 @@ Setup (Linter and code quality)
 Running the docker entire
 ---
 docker compose -f infra/docker-compose.yml up --build -d
+This will expose backend in PORT 8080 and frontend in 3000.
+Both under the same proxy server and with this golang api can be running with cors disabled.
